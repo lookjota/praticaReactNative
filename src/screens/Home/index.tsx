@@ -19,17 +19,19 @@ export function Home() {
         Tuesday, August 20 of 2024.
       </Text>
 
-      <TextInput style={styles.input} 
-        placeholder='Nome do participante'
-        placeholderTextColor="#6B6B6B"
-        keyboardType='default'
-      />
+      <View style={styles.form}>
+        <TextInput style={styles.input} 
+          placeholder='Nome do participante'
+          placeholderTextColor="#6B6B6B"
+          keyboardType='default'
+        />
 
-      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-        <Text style={styles.buttonText}>
-          +
-        </Text>
-      </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+          <Text style={styles.buttonText}>
+            +
+          </Text>
+        </TouchableOpacity>
+      </View>
     
 
     </View>
