@@ -1,9 +1,9 @@
 import { styles } from './styles';
 
-
 import { Text, View } from '@/components/Themed';
-
 import { TextInput, TouchableOpacity } from 'react-native';
+
+import { Participant } from '@/src/components/Participant';
 
 export function Home() {
 
@@ -13,7 +13,7 @@ export function Home() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>Nome do evento Full</Text>
+      <Text style={styles.eventName}>Nome do evento</Text>
 
       <Text style={styles.eventData}>
         Tuesday, August 20 of 2024.
@@ -32,6 +32,9 @@ export function Home() {
           </Text>
         </TouchableOpacity>
       </View>
+
+      <Participant/> 
+      <Participant/> 
     
 
     </View>
